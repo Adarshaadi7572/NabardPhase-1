@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Bree+Serif&family=Poppins&family=Roboto:ital@1&family=Ubuntu&family=Varela+Round&display=swap');
+
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        scroll-behavior: smooth;
+        font-family: 'Poppins', sans-serif;
+    }
+    :root{
+        --bg-color: #fdfdfd;
+        --text-color: #333;
+        --main-color: MediumSeaGreen;
+        --secondary-color: rgb(255, 233, 188);
+    
+    }
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+    
+    }
+    body{
+        background: var(--secondary-color);
+        color: var(--text-color);
+    }
+.header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 7%;
+    /* background:dodgerblue; */
+    display: flex;
+    align-items:center;
+    z-index: 1;
+}
+.logo{
+    
+   
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: default;
+    /* margin-right: auto; */
+}
+.mlogo{
+    
+   
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    cursor: default;
+    margin-left: auto;
+}
+.logo img{
+    width: 54px;
+}
+.mlogo img{
+    width: 64px;
+}
+.navbar a{
+    position: relative;
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: azure;     
+ 
+
+}
+.navbar a:hover:after{
+    width: 100%;
+   }
+   .navbar a::after {
+       content:'';
+       position: absolute;
+       left: 0;
+       bottom: -0.1em;
+       width: 0;
+       height: 0.2rem;
+       background: var(--bg-color);
+   }     
+
+.Box-1 .Box-2 img{ 
+    width: 3.5vw;
+    margin-left: 1vw;
+}
+
+
+.Box-1{
+    display: flex;
+    align-items: center;
+    margin-left: 2.5vw;
+}
+.Box-2{
+    display: flex;
+    align-items: center;
+    margin-right: 2vw;
+}
+h4{
+    font-size: 1.2vw;
+}
+
+
+/* cards decoration  */
+/* .B-1{
+    
+    width: 434px;
+    border: 2px solid black;
+    border-radius: 2.4vw;
+    background-color: rgb(255, 199, 142);
+}
+.B-1 span{
+    display: flex;
+    padding-left: 1vw;
+    font-size: 1.2vw;
+    align-items: center;
+} */
+.container{
+    width: 90%;
+    height: 100vh;
+     margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   
+}
+.circle{
+    /* border: 2px solid red ; */
+    /* background-color: aqua; */
+    /* border: 2px solid blue; */
+    /* background-color: white; */
+    border-radius: 50%;
+    height: 30%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0% 3% 0%;
+    
+}
+.rectangle{
+    /* border: 0.3rem solid red; */
+    width: 50%;
+    height: 46%;
+    margin: 0% 1% 0% 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4rem;
+    background-color: rgba(299,299,299,0.4);
+    
+}
+.circle img{
+    width: 50%;
+}
+
+.progress{
+    position: relative;
+    width: 80%;
+    height: 35px;
+    background-color: #adadad;
+    border-radius: 5px;
+    overflow: hidden;
+    /* top : 35%;
+    right: 15%; */
+
+}
+.progress_fill{
+    width: 0%;
+    height: 100%;
+    background: #ff4b34;
+    
+
+}
+.progress_text{
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    transform: translateY(-50);
+    font: bold 14px ,'Quicksand' , sans-serif;
+    color: #ffff;
+
+}
+.name h3{
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+    font-size: 1.3em;
+
+}
